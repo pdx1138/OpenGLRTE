@@ -1,0 +1,28 @@
+Justin Tyrrell
+VGP 463 : CG Programming Advanced Topics
+Fall 2014
+
+List of Porject Features:
+
+ * Camera:
+     Orthographic
+
+ * Color:
+     Blending
+     Conversion : Ints - Bit Representation - Custom Class
+     Put/Extract Color to screen
+               
+
+ * Operator Overloads:
+     Color class
+     Point/Vector class
+
+ * Object Classes: 
+     Sphere
+
+ * Additional Programming Features:
+     Multiple Custom Classes: Point, Color, Ray, Texture, Object, etc...
+     Inherritence: Example: Object Parent Class, Sphere Child Class
+     
+ * File Load/Save:
+     BMP Image

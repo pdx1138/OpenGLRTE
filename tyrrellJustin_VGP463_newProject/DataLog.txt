@@ -1,0 +1,1961 @@
+DATA LOG FOR VGP 463
+
+File Format::
+
+date and time the render finished
+	render time in seconds
+
+***********************************************************************************
+
+Tue Dec 16 13:34:14 2014
+	18.715 Seconds
+Tue Dec 16 13:36:59 2014
+	119.51 Seconds
+Tue Dec 16 14:10:56 2014
+	1866.03 Seconds
+
+
+Start Time: Tue Dec 16 14:13:30 2014
+End Time: Tue Dec 16 14:13:30 2014
+	18.862 Seconds
+
+
+Start Time: Tue Dec 16 14:14:55 2014
+End Time: Tue Dec 16 14:15:13 2014
+	18.783 Seconds
+
+Start Time: Tue Dec 16 14:28:28 2014
+End Time: Tue Dec 16 14:28:28 2014
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime: 18.879 Seconds
+
+Start Time: Tue Dec 16 14:34:50 2014
+End Time: Tue Dec 16 14:34:50 2014
+	Shadow Rays: 160
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime: 18.731 Seconds
+
+Start Time: Tue Dec 16 14:54:06 2014
+End Time: Tue Dec 16 14:54:06 2014
+	Shadow Rays: 160
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+TotalTime: 754.102 Seconds
+
+Start Time: Tue Dec 16 15:07:14 2014
+End Time: Tue Dec 16 15:07:14 2014
+	Shadow Rays: 160
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	MultiThreading
+TotalTime >> H:M:S0:2:24
+
+Start Time: Tue Dec 16 15:22:22 2014
+End Time: Tue Dec 16 15:22:56 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:30
+
+Start Time: Tue Dec 16 16:00:23 2014
+End Time: Tue Dec 16 16:13:44 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:12:49
+
+Start Time: Tue Dec 16 16:14:46 2014
+End Time: Tue Dec 16 16:29:14 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:12:59
+
+Start Time: Tue Dec 16 16:31:20 2014
+End Time: Tue Dec 16 16:31:52 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recussion Depth: 10
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:29
+
+Start Time: Tue Dec 16 16:44:00 2014
+End Time: Tue Dec 16 16:44:32 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:30
+
+Start Time: Tue Dec 16 18:46:47 2014
+End Time: Tue Dec 16 22:39:17 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Ambient Occlusion
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 3:50:31
+
+Start Time: Tue Dec 16 22:53:49 2014
+End Time: Tue Dec 16 22:53:54 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Tue Dec 16 22:54:40 2014
+End Time: Tue Dec 16 22:54:52 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:3
+
+Start Time: Tue Dec 16 23:02:03 2014
+End Time: Tue Dec 16 23:02:09 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Tue Dec 16 23:02:54 2014
+End Time: Tue Dec 16 23:04:25 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:6
+
+Start Time: Tue Dec 16 23:06:04 2014
+End Time: Tue Dec 16 23:39:36 2014
+	Shadow Rays: 1024
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Orthographic Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:33:14
+
+Start Time: Tue Dec 16 23:47:17 2014
+End Time: Tue Dec 16 23:49:02 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:55
+
+Start Time: Tue Dec 16 23:51:25 2014
+End Time: Tue Dec 16 23:53:09 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:56
+
+Start Time: Tue Dec 16 23:55:10 2014
+End Time: Tue Dec 16 23:58:04 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:55
+
+Start Time: Wed Dec 17 00:00:10 2014
+End Time: Wed Dec 17 00:01:08 2014
+	Shadow Rays: 32
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 2
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:56
+
+Start Time: Wed Dec 17 00:03:43 2014
+End Time: Wed Dec 17 00:20:42 2014
+	Shadow Rays: 512
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 10
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Specular Lighting
+	Reflections
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:14:4
+
+Start Time: Wed Dec 17 01:46:16 2014
+End Time: Wed Dec 17 01:48:52 2014
+	Shadow Rays: 16
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 2
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:28
+
+Start Time: Wed Dec 17 01:49:28 2014
+End Time: Wed Dec 17 02:25:05 2014
+	Shadow Rays: 16
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 2
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+	Ambient Occlusion
+	MultiThreading
+TotalTime >> H:M:S >> 0:33:45
+
+Start Time: Wed Dec 17 02:34:15 2014
+End Time: Wed Dec 17 02:34:37 2014
+	Shadow Rays: 16
+	Ambient Occlusion Window: 20
+	Ambient Occlusion Length: 800
+	Reflection Recurssion Depth: 2
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:18
+
+Start Time: Wed Dec 17 03:38:58 2014
+End Time: Wed Dec 17 03:39:11 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Shadow Rays: 16
+	Specular Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Wed Dec 17 03:40:40 2014
+End Time: Wed Dec 17 03:41:18 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Wed Dec 17 03:48:33 2014
+End Time: Wed Dec 17 03:49:24 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:3
+
+Start Time: Wed Dec 17 03:50:24 2014
+End Time: Wed Dec 17 03:52:13 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+	Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:37
+
+Start Time: Wed Dec 17 03:53:56 2014
+End Time: Wed Dec 17 03:55:37 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:37
+
+Start Time: Wed Dec 17 05:38:33 2014
+End Time: Wed Dec 17 05:39:27 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:31
+
+Start Time: Wed Dec 17 05:44:28 2014
+End Time: Wed Dec 17 05:47:16 2014
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:36
+
+Start Time: Wed Dec 17 05:48:52 2014
+End Time: Wed Dec 17 05:51:28 2014
+Number of Lights in Scene: 3
+Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:37
+
+Start Time: Wed Dec 17 05:52:39 2014
+End Time: Wed Dec 17 05:54:24 2014
+Number of Lights in Scene: 3
+Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	Toon Shading
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:38
+
+Start Time: Wed Dec 17 06:28:01 2014
+End Time: Wed Dec 17 06:30:14 2014
+Number of Lights in Scene: 3
+Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:37
+
+Start Time: Wed Dec 17 06:33:25 2014
+End Time: Wed Dec 17 06:35:20 2014
+Number of Lights in Scene: 3
+Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:40
+
+Start Time: Wed Dec 17 07:02:45 2014
+End Time: Wed Dec 17 07:03:59 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:31
+
+Start Time: Wed Dec 17 07:06:04 2014
+End Time: Wed Dec 17 07:06:41 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:34
+
+Start Time: Wed Dec 17 07:08:32 2014
+End Time: Wed Dec 17 07:09:21 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:30
+
+Start Time: Wed Dec 17 07:25:11 2014
+End Time: Wed Dec 17 07:25:47 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 6
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Texture Mapping
+	Fresnel Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:30
+
+Start Time: Wed Dec 17 09:06:17 2014
+End Time: Wed Dec 17 09:06:48 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 16
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Texture Mapping
+	Fresnel Lighting
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:20
+
+Start Time: Wed Dec 17 14:21:08 2014
+End Time: Wed Dec 17 14:23:15 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 512
+	Ambient Occlusion
+		Ambient Occlusion Window: 20
+		Ambient Occlusion Length: 800
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:55
+
+Start Time: Wed Dec 17 14:24:40 2014
+End Time: Wed Dec 17 14:28:14 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 512
+	Ambient Occlusion
+		Ambient Occlusion Window: 20
+		Ambient Occlusion Length: 800
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:48
+
+Start Time: Wed Dec 17 15:02:01 2014
+End Time: Wed Dec 17 15:04:16 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Ambient Occlusion
+		Ambient Occlusion Window: 20
+		Ambient Occlusion Length: 200
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:47
+
+Start Time: Wed Dec 17 15:07:49 2014
+End Time: Wed Dec 17 17:09:09 2014
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 256
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 2:0:2
+
+Start Time: Sat Jan 03 21:20:31 2015
+End Time: Sun Jan 04 14:35:53 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 1080
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 1024
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Texture Mapping
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 17:15:13
+
+Start Time: Sun Jan 04 14:38:07 2015
+End Time: Sun Jan 04 16:17:44 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 1080
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:33:46
+
+Start Time: Sun Jan 04 16:34:21 2015
+End Time: Sun Jan 04 19:00:02 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 1080
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Ambient Occlusion
+		Ambient Occlusion Window: 20
+		Ambient Occlusion Length: 200
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 1:41:12
+
+Start Time: Sun Jan 04 19:03:34 2015
+End Time: Sun Jan 04 19:10:05 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:4:31
+
+Start Time: Sun Jan 04 19:13:41 2015
+End Time: Sun Jan 04 19:17:04 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:6
+
+Start Time: Sun Jan 04 19:18:16 2015
+End Time: Sun Jan 04 19:24:20 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:8
+
+Start Time: Sun Jan 04 19:25:31 2015
+End Time: Sun Jan 04 19:29:05 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:6
+
+Start Time: Sun Jan 04 19:32:03 2015
+End Time: Sun Jan 04 19:36:02 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:9
+
+Start Time: Sun Jan 04 19:36:55 2015
+End Time: Sun Jan 04 19:45:25 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:9
+
+Start Time: Sun Jan 04 19:46:09 2015
+End Time: Sun Jan 04 19:52:58 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Fresnel Lighting
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:8
+
+Start Time: Sun Jan 04 19:54:06 2015
+End Time: Sun Jan 04 19:58:56 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Toon Shading
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:6
+
+Start Time: Sun Jan 04 19:59:36 2015
+End Time: Sun Jan 04 20:05:22 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Fresnel Lighting
+	Toon Shading
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:12
+
+Start Time: Sun Jan 04 20:05:42 2015
+End Time: Sun Jan 04 23:40:03 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Fresnel Lighting
+	Toon Shading
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:3:7
+
+Start Time: Tue Mar 03 08:29:55 2015
+End Time: Tue Mar 03 08:33:59 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:52
+
+Start Time: Tue Mar 03 10:22:58 2015
+End Time: Tue Mar 03 10:22:58 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:27
+
+Start Time: Tue Mar 03 10:30:37 2015
+End Time: Tue Mar 03 10:30:37 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:28
+
+Start Time: Tue Mar 03 10:31:32 2015
+End Time: Tue Mar 03 10:31:32 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:4
+
+Start Time: Wed Mar 04 13:51:31 2015
+End Time: Wed Mar 04 13:51:31 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Mon Mar 09 14:54:42 2015
+End Time: Mon Mar 09 14:54:42 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Mon Mar 09 17:56:35 2015
+End Time: Mon Mar 09 17:56:35 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Mon Mar 09 18:06:47 2015
+End Time: Mon Mar 09 18:06:47 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 11
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:4
+
+Start Time: Mon Mar 09 18:53:03 2015
+End Time: Mon Mar 09 18:53:03 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Mon Mar 09 18:55:29 2015
+End Time: Mon Mar 09 18:55:29 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	Anti-Aliasing
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Mon Mar 09 19:00:16 2015
+End Time: Mon Mar 09 19:00:16 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Mon Mar 09 19:08:12 2015
+End Time: Mon Mar 09 19:08:12 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:4
+
+Start Time: Mon Mar 09 19:11:27 2015
+End Time: Mon Mar 09 19:11:27 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:3
+
+Start Time: Sat Mar 21 17:49:37 2015
+End Time: Sat Mar 21 17:49:37 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:6
+
+Start Time: Sun Mar 22 01:14:28 2015
+End Time: Sun Mar 22 01:14:28 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 1
+	Enhanced MultiThreading
+TotalTime >> H:M:S >> 0:0:4
+
+Start Time: Sun Mar 22 01:27:05 2015
+End Time: Sun Mar 22 01:27:05 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+	Enhanced MultiThreading
+TotalTime >> H:M:S >> 0:4:10
+
+Start Time: Sun Mar 22 02:02:07 2015
+End Time: Sun Mar 22 02:02:07 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 1080
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Specular Lighting
+	Reflections
+		Reflection Recurssion Depth: 2
+	Fresnel Lighting
+	Anti-Aliasing
+	Enhanced MultiThreading
+TotalTime >> H:M:S >> 0:31:52
+
+Start Time: Sun Mar 22 02:05:43 2015
+End Time: Sun Mar 22 02:05:43 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+TotalTime >> H:M:S >> 0:0:10
+
+Start Time: Sun Mar 22 02:20:54 2015
+End Time: Sun Mar 22 02:20:54 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:13
+
+Start Time: Sun Mar 22 02:23:04 2015
+End Time: Sun Mar 22 02:23:04 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:12
+
+Start Time: Sun Mar 22 02:24:33 2015
+End Time: Sun Mar 22 02:24:33 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:14
+
+Start Time: Sun Mar 22 02:25:08 2015
+End Time: Sun Mar 22 02:25:08 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+TotalTime >> H:M:S >> 0:0:27
+
+Start Time: Mon Mar 23 01:06:21 2015
+End Time: Mon Mar 23 01:06:21 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+TotalTime >> H:M:S >> 0:0:27
+
+Start Time: Mon Mar 23 01:07:51 2015
+End Time: Mon Mar 23 01:07:51 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:13
+
+Start Time: Mon Mar 23 01:10:11 2015
+End Time: Mon Mar 23 01:10:11 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:26
+
+Start Time: Mon Mar 23 01:15:08 2015
+End Time: Mon Mar 23 01:15:08 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:26
+
+Start Time: Mon Mar 23 01:16:27 2015
+End Time: Mon Mar 23 01:16:27 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:25
+
+Start Time: Mon Mar 23 01:18:31 2015
+End Time: Mon Mar 23 01:18:31 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:27
+
+Start Time: Mon Mar 23 01:19:38 2015
+End Time: Mon Mar 23 01:19:38 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:12
+
+Start Time: Mon Mar 23 01:20:20 2015
+End Time: Mon Mar 23 01:20:20 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:11
+
+Start Time: Mon Mar 23 01:26:01 2015
+End Time: Mon Mar 23 01:26:01 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:12
+
+Start Time: Mon Mar 23 01:41:30 2015
+End Time: Mon Mar 23 01:41:30 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		*** AA JITTER TESTING **
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:4:2
+
+Start Time: Mon Mar 23 02:00:54 2015
+End Time: Mon Mar 23 02:00:54 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:4:30
+
+Start Time: Mon Mar 23 02:06:01 2015
+End Time: Mon Mar 23 02:06:01 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	MultiThreading
+TotalTime >> H:M:S >> 0:4:52
+
+Start Time: Mon Mar 23 02:18:11 2015
+End Time: Mon Mar 23 02:18:11 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+TotalTime >> H:M:S >> 0:11:41
+
+Start Time: Mon Mar 23 02:19:09 2015
+End Time: Mon Mar 23 02:19:09 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 8
+TotalTime >> H:M:S >> 0:0:13
+
+Start Time: Mon Mar 23 02:25:25 2015
+End Time: Mon Mar 23 02:25:25 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	Enhanced MultiThreading
+		Maximum Number of Threads: 8
+TotalTime >> H:M:S >> 0:5:23
+
+Start Time: Mon Mar 23 02:33:40 2015
+End Time: Mon Mar 23 02:33:40 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:11
+
+Start Time: Mon Mar 23 02:36:12 2015
+End Time: Mon Mar 23 02:36:23 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:10
+
+Start Time: Mon Mar 23 02:52:04 2015
+End Time: Mon Mar 23 02:52:14 2015
+Save Time Stamp: Mon Mar 23 02:52:15 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:11
+
+Start Time: Mon Mar 23 02:55:01 2015
+Save Time Stamp: Mon Mar 23 02:55:12 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:10
+
+Start Time: Mon Mar 23 02:55:51 2015
+Save Time Stamp: Mon Mar 23 02:56:02 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:11
+
+Start Time: Mon Mar 23 02:56:35 2015
+End Time: Mon Mar 23 02:56:45 2015
+Save Time Stamp: Mon Mar 23 02:56:50 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:14
+
+Start Time: Mon Mar 23 02:58:35 2015
+End Time: Mon Mar 23 02:58:45 2015
+Save Time Stamp: Mon Mar 23 02:58:46 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:10
+
+Start Time: Mon Mar 23 02:59:05 2015
+Save Time Stamp: Mon Mar 23 02:59:18 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Mon Mar 23 03:06:48 2015
+Save Time Stamp: Mon Mar 23 03:07:01 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:0
+
+Start Time: Mon Mar 23 03:12:15 2015
+End Time: Mon Mar 23 03:12:26 2015
+Save Time Stamp: Mon Mar 23 03:12:27 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:11
+
+Start Time: Mon Mar 23 03:12:42 2015
+End Time: Mon Mar 23 03:12:53 2015
+Save Time Stamp: Mon Mar 23 03:12:58 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:10
+
+Start Time: Mon Mar 23 03:14:04 2015
+End Time: Mon Mar 23 03:17:50 2015
+Save Time Stamp: Mon Mar 23 03:17:56 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:3:46
+
+Start Time: Mon Mar 23 03:18:33 2015
+End Time: Mon Mar 23 03:23:23 2015
+Save Time Stamp: Mon Mar 23 03:23:44 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	MultiThreading
+TotalTime >> H:M:S >> 0:4:49
+
+Start Time: Mon Mar 23 03:27:30 2015
+End Time: Mon Mar 23 03:38:13 2015
+Save Time Stamp: Mon Mar 23 03:39:23 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 32
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+TotalTime >> H:M:S >> 0:10:42
+
+Start Time: Sun Sep 06 14:59:13 2015
+End Time: Sun Sep 06 15:39:18 2015
+Save Time Stamp: Sun Sep 06 15:56:24 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+TotalTime >> H:M:S >> 0:40:4
+
+Start Time: Sun Sep 06 15:56:40 2015
+End Time: Sun Sep 06 16:07:54 2015
+Save Time Stamp: Sun Sep 06 16:10:58 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	MultiThreading
+TotalTime >> H:M:S >> 0:11:14
+
+Start Time: Sun Sep 06 16:41:43 2015
+End Time: Sun Sep 06 16:43:09 2015
+Save Time Stamp: Sun Sep 06 16:43:12 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	MultiThreading
+TotalTime >> H:M:S >> 0:1:26
+
+Start Time: Sun Sep 06 16:47:35 2015
+End Time: Sun Sep 06 16:49:10 2015
+Save Time Stamp: Sun Sep 06 16:49:36 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+TotalTime >> H:M:S >> 0:1:34
+
+Start Time: Sun Sep 06 16:49:46 2015
+End Time: Sun Sep 06 16:50:11 2015
+Save Time Stamp: Sun Sep 06 16:50:13 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	MultiThreading
+TotalTime >> H:M:S >> 0:0:24
+
+Start Time: Mon Sep 07 20:14:33 2015
+End Time: Mon Sep 07 20:15:06 2015
+Save Time Stamp: Mon Sep 07 20:15:06 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:26
+
+Start Time: Mon Sep 07 20:15:15 2015
+End Time: Mon Sep 07 20:15:22 2015
+Save Time Stamp: Mon Sep 07 20:15:22 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:2
+
+Start Time: Mon Sep 07 20:16:38 2015
+End Time: Mon Sep 07 20:17:53 2015
+Save Time Stamp: Mon Sep 07 20:17:53 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Anti-Aliasing
+		Random Jitter Sampling
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:3
+
+Start Time: Wed Dec 23 17:04:42 2015
+End Time: Wed Dec 23 17:49:24 2015
+Save Time Stamp: Wed Dec 23 17:49:24 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:22:18
+
+Start Time: Thu Dec 24 11:19:26 2015
+End Time: Thu Dec 24 11:19:43 2015
+Save Time Stamp: Thu Dec 24 11:19:43 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:7
+
+Start Time: Thu Dec 24 11:21:13 2015
+End Time: Thu Dec 24 11:21:46 2015
+Save Time Stamp: Thu Dec 24 11:21:46 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 1080
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:3
+
+Start Time: Thu Dec 24 11:23:01 2015
+End Time: Thu Dec 24 11:23:20 2015
+Save Time Stamp: Thu Dec 24 11:23:20 2015
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: HD 720
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:16
+
+Start Time: Mon Mar 14 03:11:42 2016
+End Time: Mon Mar 14 03:11:50 2016
+Save Time Stamp: Mon Mar 14 03:11:50 2016
+
+	Number of Lights in Scene: 3
+	Number of Objects in Scene: 11
+	Resolution: VGA
+
+	Perspective Camera
+	Soft Shadows
+		Shadow Rays: 8
+	Reflections
+		Reflection Recurssion Depth: 2
+	Enhanced MultiThreading
+		Maximum Number of Threads: 16
+TotalTime >> H:M:S >> 0:0:6

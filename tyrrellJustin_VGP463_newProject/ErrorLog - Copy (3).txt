@@ -1,0 +1,59 @@
+New line added: 0
+Num Renderers: 1
+New line added: 1
+Num Renderers: 2
+New line added: 2
+Num Renderers: 3
+New line added: 3
+Num Renderers: 4
+New line added: 4
+Num Renderers: 5
+New line added: 5
+Num Renderers: 6
+New line added: 6
+Num Renderers: 7
+New line added: 7
+Num Renderers: 8
+New line added: 8
+Num Renderers: 9
+New line added: 9
+Num Renderers: 10
+New line added: 10
+Num Renderers: 11
+New line added: 11
+Num Renderers: 12
+New line added: 12
+Num Renderers: 13
+New line added: 13
+Num Renderers: 14
+New line added: 14
+Num Renderers: 15
+New line added: 15
+Num Renderers: 16
+
+**Removed line: 8
+Num Renderers: 15
+
+**Removed line: 7
+Num Renderers: 14
+
+**Removed line: 6
+Num Renderers: 13
+
+**Removed line: 5
+Num Renderers: 12
+
+**Removed line: 4
+Num Renderers: 11
+
+**Removed line: 3
+Num Renderers: 10
+
+**Removed line: 2
+Num Renderers: 9
+
+**Removed line: 1
+Num Renderers: 8
+
+**Removed line: 0
+Num Renderers: 7
