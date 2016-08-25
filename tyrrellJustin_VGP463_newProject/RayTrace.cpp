@@ -26,7 +26,7 @@ void CalculateLighting(Camera* pCam, Light* light, RayHitInfo &hitInfo, int recu
 
 	RayHitInfo info;
 
-	if(ambOcc == true) {
+	/*if(ambOcc == true) {
 		Vector camVector = pCam->position - hitInfo.point;
 		float dist = camVector.Length();
 		float maxLength = MAX_AMB_OCC_LENGTH;
@@ -38,7 +38,7 @@ void CalculateLighting(Camera* pCam, Light* light, RayHitInfo &hitInfo, int recu
 		c.Clamp();
 		hitInfo.pixel += ConvertColor(c);
 		return;
-	}
+	}*/
 
 	#ifdef ENABLE_AMBIENT_OCCLUSION
 		Color avg = Color (0.0f, 0.0f, 0.0f, 0.0f);
@@ -310,36 +310,36 @@ void RayTrace (RenderRegion* region, int* vidMem, int VP_WIDTH, int VP_HEIGHT, C
 	}
 }
 
-void RayTrace (int* vidMem, int VP_WIDTH, int VP_HEIGHT, Camera* pCam, Scene* scene, int recursionDepth, bool ambOcc) {
-	for(int y = -(VP_HEIGHT / 2); y <= (VP_HEIGHT / 2); ++y) {
-		for(int x = -(VP_WIDTH / 2); x <= (VP_WIDTH / 2); ++x) {
-			Color resultColor = Color(0.0f, 0.0f, 0.0f, 0.0f);
-
-			RayHitInfo hitInfo;
-			Ray ray = pCam->GetRay(x, y);
-
-			if(GetNearestHit(ray, scene, hitInfo) == true) {
-				if(ambOcc == true) CalculateLighting(pCam, scene->lights[0], hitInfo, recursionDepth, ambOcc);
-				else {
-					for(int n = 0; n < scene->lights.length; ++n) {
-						CalculateLighting(pCam, scene->lights[n], hitInfo, recursionDepth, ambOcc);
-					} 
-				}
-				resultColor += ConvertColor(hitInfo.pixel);
-			} 
-			else {
-				resultColor += ConvertColor(0x00000000);
-			}
-
-			PutPixel(vidMem, 
-					 x + (VP_WIDTH / 2.0f), 
-					 y + (VP_HEIGHT / 2.0f), 
-					 VP_WIDTH, VP_HEIGHT, 
-					 ConvertColor(resultColor));			
-		}
-	}
-}
-
+//void RayTrace (int* vidMem, int VP_WIDTH, int VP_HEIGHT, Camera* pCam, Scene* scene, int recursionDepth, bool ambOcc) {
+//	for(int y = -(VP_HEIGHT / 2); y <= (VP_HEIGHT / 2); ++y) {
+//		for(int x = -(VP_WIDTH / 2); x <= (VP_WIDTH / 2); ++x) {
+//			Color resultColor = Color(0.0f, 0.0f, 0.0f, 0.0f);
+//
+//			RayHitInfo hitInfo;
+//			Ray ray = pCam->GetRay(x, y);
+//
+//			if(GetNearestHit(ray, scene, hitInfo) == true) {
+//				if(ambOcc == true) CalculateLighting(pCam, scene->lights[0], hitInfo, recursionDepth, ambOcc);
+//				else {
+//					for(int n = 0; n < scene->lights.length; ++n) {
+//						CalculateLighting(pCam, scene->lights[n], hitInfo, recursionDepth, ambOcc);
+//					} 
+//				}
+//				resultColor += ConvertColor(hitInfo.pixel);
+//			} 
+//			else {
+//				resultColor += ConvertColor(0x00000000);
+//			}
+//
+//			PutPixel(vidMem, 
+//					 x + (VP_WIDTH / 2.0f), 
+//					 y + (VP_HEIGHT / 2.0f), 
+//					 VP_WIDTH, VP_HEIGHT, 
+//					 ConvertColor(resultColor));			
+//		}
+//	}
+//}
+//
 bool RayTrace(const Ray &ray, List<Object*> &objList, Light* light, RayHitInfo &hitInfo, int recursionDepth) {
 	if(recursionDepth > RAY_RECURSSION_DEPTH) return false;
 	if(GetNearestHit(ray, objList, hitInfo)) {

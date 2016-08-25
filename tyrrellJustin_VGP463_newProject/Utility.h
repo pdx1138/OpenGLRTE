@@ -60,3 +60,6 @@ void RenderLine(RenderRegion* region);
 void DoMultiThreading(MSG &msg, BOOL &bQuit, GLuint &texture, HDC &hDC);
 void DoEnhancedMultiThreading(MSG &msg, BOOL &bQuit, GLuint &texture, HDC &hDC);
 void SaveCurrentDateTime(char* msg);
+
+void ClassScene();
+void PortfolioScene();

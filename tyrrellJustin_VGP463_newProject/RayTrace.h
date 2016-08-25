@@ -31,8 +31,8 @@
 #define ENBALE_SOFTSHADOWS
 
 // Lighting Features
-//#define ENABLE_SPECULAR_LIGHTING
-#define ENABLE_REFLECTIONS
+#define ENABLE_SPECULAR_LIGHTING
+//#define ENABLE_REFLECTIONS
 //#define ENABLE_AMBIENT_OCCLUSION
 //#define ENABLE_FRESNEL_LIGHT
 //#define ENABLE_TOON_SHADING
@@ -42,6 +42,7 @@
 
 // Various Enhancements
 //#define ENABLE_ANTI_ALIASING
+
 //#define ENABLE_MULTI_THREADING
 #define ENABLE_ENHANCED_MULTI_THREAD
 /////////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +58,7 @@ Scene* GetNewScene();
 
 void CalculateLighting(Camera* pCam, Light* light, RayHitInfo &hitInfo, int recursionDepth, bool ambOcc = false);
 void RayTrace (RenderRegion* region, int* vidMem, int VP_WIDTH, int VP_HEIGHT, Camera* pCam, Scene* scene, int recursionDepth, bool ambOcc);
-void RayTrace (int* vidMem, int VP_WIDTH, int VP_HEIGHT, Camera* pCam, Scene* scene, int recursionDepth, bool ambOcc);
+//void RayTrace (int* vidMem, int VP_WIDTH, int VP_HEIGHT, Camera* pCam, Scene* scene, int recursionDepth, bool ambOcc);
 bool RayTrace(const Ray &ray, List<Object*> &objList, Light* light, RayHitInfo &hitInfo, int recursionDepth);
 
 float RandFloat();

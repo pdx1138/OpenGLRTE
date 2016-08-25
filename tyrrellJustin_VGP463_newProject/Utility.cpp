@@ -43,201 +43,204 @@ using namespace DEBUG;
 void OnInitialize() {
 	srand(time(NULL));
 	scene = GetNewScene();
-
-	// Initialize Camera /////////////////////////////////////////////////////
 	
-	#ifdef USE_ORTHO_CAMERA
-		FIXED_ORTHO_CAMERA* cam = new FIXED_ORTHO_CAMERA();
-		cam->Initialize();
-		// cam-> ...
-	#else
-	#ifdef USE_PERSP_CAMERA
-		FIXED_PERSP_CAMERA* cam = new FIXED_PERSP_CAMERA();
-		cam->Initialize();
-		#ifdef USE_PERSP_LOOK_AT
-			cam->LookAt(0.0f, 0.0f, 1500.0f);
-		#endif
-		// cam-> ...
-	#endif
-	#endif
+	//ClassScene();
+	PortfolioScene();
 
-	mainCamera = cam;
-
-	textureTest = new Texture();
-	textureTest->LoadTexture("text1.bmp");
-	
-	// Initialize Objects /////////////////////////////////////////////////////
-	// RED Sphere
-	SphereObject* sphere = new SphereObject();
-	sphere->radius = 100.0f;
-	sphere->position.x = 350.0f;
-	sphere->position.y = 125.0f;
-	sphere->position.z = 1200.0f;
-	sphere->color = Color( 1.0f, 0.0f, 0.0f, 1.0f);
-	sphere->texture.LoadTexture("text6.bmp");
-	
-	// GREEN Sphere
-	SphereObject* sphere2 = new SphereObject();
-	sphere2->radius = 100.0f;
-	sphere2->position.x = 175.0f;
-	sphere2->position.y = -150.0f;
-	sphere2->position.z = 1200.0f;
-	sphere2->color = Color( 0.0f, 1.0f, 0.0f, 1.0f);
-	sphere2->texture.LoadTexture("text5.bmp");
-
-	// BLUE Sphere
-	SphereObject* sphere3 = new SphereObject();
-	sphere3->radius = 100.0f;
-	sphere3->position.x = 525.0f;
-	sphere3->position.y = -150.0f;
-	sphere3->position.z = 1200.0f;
-	sphere3->color = Color( 0.0f, 0.0f, 1.0f, 1.0f);
-	sphere3->texture.LoadTexture("text4.bmp");
-
-	// BLACK Sphere
-	SphereObject* sphere4 = new SphereObject();
-	sphere4->radius = 50.0f;
-	sphere4->position.x = -400.0f;
-	sphere4->position.y = 50.0f;
-	sphere4->position.z = 1200.0f;
-	sphere4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
-	sphere4->texture.LoadTexture("text8.bmp");
-
-	SphereObject* sphere5 = new SphereObject();
-	sphere5->radius = 50.0f;
-	sphere5->position.x = 350.0f;
-	sphere5->position.y = -66.0f;
-	sphere5->position.z = 1200.0f;
-	sphere5->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
-	sphere5->texture.LoadTexture("text8.bmp");
-
-	// RED Tri
-	TriangleObject* tri1 = new TriangleObject(Point(-550.0f, -25.0f, 1200.0f, 1.0f), 
-											  Point(-400.0f, -225.0f, 1200.0f, 1.0f), 
-											  Point(-250.0f, -25.0f, 1200.0f, 1.0f));
-	tri1->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
-	tri1->normal = -1.0f * tri1->normal;
-	tri1->texture.LoadTexture("text2.bmp");
-
-	// GREEN Tri
-	TriangleObject* tri2 = new TriangleObject(Point(-700.0f, 175.0f, 1200.0f, 1.0f), 
-											  Point(-550.0f, -25.0f, 1200.0f, 1.0f), 
-											  Point(-400.0f, 175.0f, 1200.0f, 1.0f));
-	tri2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
-	tri2->normal = -1.0f * tri2->normal;
-	tri2->texture.LoadTexture("text3.bmp");
-
-	// BLUE Tri
-	TriangleObject* tri3 = new TriangleObject(Point(-400.0f, 175.0f, 1200.0f, 1.0f), 
-											  Point(-250.0f, -25.0f, 1200.0f, 1.0f), 
-											  Point(-100.0f, 175.0f, 1200.0f, 1.0f));
-	tri3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
-	tri3->normal = -1.0f * tri3->normal;
-	tri3->texture.LoadTexture("text7.bmp");
-
-	// WHITE Triangle
-	TriangleObject* tri4 = new TriangleObject(Point(250.0f, -87.5f, 1225.0f, 1.0f), 
-											  Point(325.0f, 12.5f, 1200.0f, 1.0f), 
-											  Point(400.0f, -87.5f, 1175.0f, 1.0f));
-	tri4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
-	tri4->texture.LoadTexture("text8.bmp");
-
-	// PLANE ///////////////////////////////////////////////////////////////////////////////////////////////////
-	PlaneObject* plane = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, 2000.0f, 0.0f),
-														Point(-2000.0f, 2000.0f, 2000.0f, 0.0f), 
-														Point(2000.0f, -2000.0f, 2000.0f, 0.0f))
-						 );
-	plane->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
-	plane->SetTexture("PlaneText_2048x2048.bmp");
-	plane->triLeft.reflectivity = 0.0f;
-	plane->triRight.reflectivity = 0.0f;
-	plane->reflectivity = 0.0f;
-	
-	PlaneObject* plane2 = new PlaneObject(TriangleObject(Point(-2000.0f, 400.0f, -2000.0f, 0.0f),
-														 Point(2000.0f, 400.0f, 2000.0f, 0.0f), 
-														 Point(-2000.0f, 400.0f, 2000.0f, 0.0f))
-						 );
-	plane2->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
-	plane2->SetTexture("PlaneText2_2048x2048.bmp");
-	plane2->reflectivity = 0.0f;
-
-	PlaneObject* plane3 = new PlaneObject(TriangleObject(Point(-2000.0f, -400.0f, -2000.0f, 0.0f),
-														 Point(-2000.0f, -400.0f, 2000.0f, 0.0f), 
-														 Point(2000.0f, -400.0f, -2000.0f, 0.0f))
-						 );
-	plane3->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
-	plane3->reflectivity = 0.0f;
-
-	PlaneObject* plane4 = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, -2000.0f, 0.0f),
-														 Point(-2000.0f, 2000.0f, -2000.0f, 0.0f), 
-														 Point(2000.0f, -2000.0f, -2000.0f, 0.0f))
-						 );
-	plane4->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
-	
-	// Form a right triangle, or half a plane    b |\
-	//											   | \
-	//											 a |__\ c
+	//// Initialize Camera /////////////////////////////////////////////////////
 	//
-	//TriangleObject* triPlane1 = new TriangleObject(Point(-400.0f, -300.0f, 200.0f, 0.0f), // a			
-	//											   Point(-400.0f, 300.0f, 600.0f, 0.0f),  // b						
-	//											   Point(400.0f, -300.0f, 200.0f, 0.0f)); // c															
+	//#ifdef USE_ORTHO_CAMERA
+	//	FIXED_ORTHO_CAMERA* cam = new FIXED_ORTHO_CAMERA();
+	//	cam->Initialize();
+	//	// cam-> ...
+	//#else
+	//#ifdef USE_PERSP_CAMERA
+	//	FIXED_PERSP_CAMERA* cam = new FIXED_PERSP_CAMERA();
+	//	cam->Initialize();
+	//	#ifdef USE_PERSP_LOOK_AT
+	//		cam->LookAt(0.0f, 0.0f, 1500.0f);
+	//	#endif
+	//	// cam-> ...
+	//#endif
+	//#endif
+
+	//mainCamera = cam;
+
+	//textureTest = new Texture();
+	//textureTest->LoadTexture("text1.bmp");
 	//
-	// Form the other half of the plane			
-	// where a = b of first triangle 				__
-	// where c = c of first triangle			 a \  | b
-	// where b.x = c.x of first triangle		    \ |
-	// where b.y = b.y of first triangle		     \| c
-	// where b.z = b.z of first triangle
-	// To ensure a perfectly rectangular plane
+	//// Initialize Objects /////////////////////////////////////////////////////
+	//// RED Sphere
+	//SphereObject* sphere = new SphereObject();
+	//sphere->radius = 100.0f;
+	//sphere->position.x = 350.0f;
+	//sphere->position.y = 125.0f;
+	//sphere->position.z = 1200.0f;
+	//sphere->color = Color( 1.0f, 0.0f, 0.0f, 1.0f);
+	//sphere->texture.LoadTexture("text6.bmp");
 	//
-	//TriangleObject* triPlane2 = new TriangleObject(triPlane1->b,  // a
-	//											   Point(triPlane1->c.x, triPlane1->b.y, triPlane1->b.z, 0.0f),  // b
-	//											   triPlane1->c);  // c
-	//triPlane1->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
-	//triPlane2->color = triPlane1->color;
+	//// GREEN Sphere
+	//SphereObject* sphere2 = new SphereObject();
+	//sphere2->radius = 100.0f;
+	//sphere2->position.x = 175.0f;
+	//sphere2->position.y = -150.0f;
+	//sphere2->position.z = 1200.0f;
+	//sphere2->color = Color( 0.0f, 1.0f, 0.0f, 1.0f);
+	//sphere2->texture.LoadTexture("text5.bmp");
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//// BLUE Sphere
+	//SphereObject* sphere3 = new SphereObject();
+	//sphere3->radius = 100.0f;
+	//sphere3->position.x = 525.0f;
+	//sphere3->position.y = -150.0f;
+	//sphere3->position.z = 1200.0f;
+	//sphere3->color = Color( 0.0f, 0.0f, 1.0f, 1.0f);
+	//sphere3->texture.LoadTexture("text4.bmp");
 
-	// Initialize Lighting /////////////////////////////////////////////////////
-	Light* light = new Light(POINT_LIGHT, Point(100.0f, 100.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
-	//Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
-	light->SetIntensity(1.0f);
-	light->SetSpecularAttributes(60.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
-	light->direction.Normalize();
+	//// BLACK Sphere
+	//SphereObject* sphere4 = new SphereObject();
+	//sphere4->radius = 50.0f;
+	//sphere4->position.x = -400.0f;
+	//sphere4->position.y = 50.0f;
+	//sphere4->position.z = 1200.0f;
+	//sphere4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//sphere4->texture.LoadTexture("text8.bmp");
 
-	Light* dirLight = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
-	dirLight->SetIntensity(1.0);
-	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
-	dirLight->direction.Normalize();
+	//SphereObject* sphere5 = new SphereObject();
+	//sphere5->radius = 50.0f;
+	//sphere5->position.x = 350.0f;
+	//sphere5->position.y = -66.0f;
+	//sphere5->position.z = 1200.0f;
+	//sphere5->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//sphere5->texture.LoadTexture("text8.bmp");
 
-	Light* dirLight2 = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, -5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
-	dirLight->SetIntensity(1.0);
-	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
-	dirLight->direction.Normalize();
-	////////////////////////////////////////////////////////////////////////////
-	
-	// Add Objects to the Scene ////////////////////////////////////////////////
-	scene->objects.AddValue(sphere);
-	scene->objects.AddValue(sphere2);
-	scene->objects.AddValue(sphere3);
-	scene->objects.AddValue(sphere4);
-	scene->objects.AddValue(sphere5);
-	scene->objects.AddValue(plane);
-	scene->objects.AddValue(plane2);
-	scene->objects.AddValue(plane3);
+	//// RED Tri
+	//TriangleObject* tri1 = new TriangleObject(Point(-550.0f, -25.0f, 1200.0f, 1.0f), 
+	//										  Point(-400.0f, -225.0f, 1200.0f, 1.0f), 
+	//										  Point(-250.0f, -25.0f, 1200.0f, 1.0f));
+	//tri1->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	//tri1->normal = -1.0f * tri1->normal;
+	//tri1->texture.LoadTexture("text2.bmp");
 
-	scene->objects.AddValue(tri1);
-	scene->objects.AddValue(tri2);
-	scene->objects.AddValue(tri3);
-	////////////////////////////////////////////////////////////////////////////
+	//// GREEN Tri
+	//TriangleObject* tri2 = new TriangleObject(Point(-700.0f, 175.0f, 1200.0f, 1.0f), 
+	//										  Point(-550.0f, -25.0f, 1200.0f, 1.0f), 
+	//										  Point(-400.0f, 175.0f, 1200.0f, 1.0f));
+	//tri2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	//tri2->normal = -1.0f * tri2->normal;
+	//tri2->texture.LoadTexture("text3.bmp");
 
-	// Add Lights to the Scene /////////////////////////////////////////////////
-	scene->lights.AddValue(light);	
-	scene->lights.AddValue(dirLight);
-	scene->lights.AddValue(dirLight2);
-	////////////////////////////////////////////////////////////////////////////
+	//// BLUE Tri
+	//TriangleObject* tri3 = new TriangleObject(Point(-400.0f, 175.0f, 1200.0f, 1.0f), 
+	//										  Point(-250.0f, -25.0f, 1200.0f, 1.0f), 
+	//										  Point(-100.0f, 175.0f, 1200.0f, 1.0f));
+	//tri3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	//tri3->normal = -1.0f * tri3->normal;
+	//tri3->texture.LoadTexture("text7.bmp");
 
-	finished = false;
+	//// WHITE Triangle
+	//TriangleObject* tri4 = new TriangleObject(Point(250.0f, -87.5f, 1225.0f, 1.0f), 
+	//										  Point(325.0f, 12.5f, 1200.0f, 1.0f), 
+	//										  Point(400.0f, -87.5f, 1175.0f, 1.0f));
+	//tri4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//tri4->texture.LoadTexture("text8.bmp");
+
+	//// PLANE ///////////////////////////////////////////////////////////////////////////////////////////////////
+	//PlaneObject* plane = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, 2000.0f, 0.0f),
+	//													Point(-2000.0f, 2000.0f, 2000.0f, 0.0f), 
+	//													Point(2000.0f, -2000.0f, 2000.0f, 0.0f))
+	//					 );
+	//plane->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	//plane->SetTexture("PlaneText_2048x2048.bmp");
+	//plane->triLeft.reflectivity = 0.0f;
+	//plane->triRight.reflectivity = 0.0f;
+	//plane->reflectivity = 0.0f;
+	//
+	//PlaneObject* plane2 = new PlaneObject(TriangleObject(Point(-2000.0f, 400.0f, -2000.0f, 0.0f),
+	//													 Point(2000.0f, 400.0f, 2000.0f, 0.0f), 
+	//													 Point(-2000.0f, 400.0f, 2000.0f, 0.0f))
+	//					 );
+	//plane2->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	//plane2->SetTexture("PlaneText2_2048x2048.bmp");
+	//plane2->reflectivity = 0.0f;
+
+	//PlaneObject* plane3 = new PlaneObject(TriangleObject(Point(-2000.0f, -400.0f, -2000.0f, 0.0f),
+	//													 Point(-2000.0f, -400.0f, 2000.0f, 0.0f), 
+	//													 Point(2000.0f, -400.0f, -2000.0f, 0.0f))
+	//					 );
+	//plane3->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+	//plane3->reflectivity = 0.0f;
+
+	//PlaneObject* plane4 = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, -2000.0f, 0.0f),
+	//													 Point(-2000.0f, 2000.0f, -2000.0f, 0.0f), 
+	//													 Point(2000.0f, -2000.0f, -2000.0f, 0.0f))
+	//					 );
+	//plane4->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+	//
+	//// Form a right triangle, or half a plane    b |\
+	////											   | \
+	////											 a |__\ c
+	////
+	////TriangleObject* triPlane1 = new TriangleObject(Point(-400.0f, -300.0f, 200.0f, 0.0f), // a			
+	////											   Point(-400.0f, 300.0f, 600.0f, 0.0f),  // b						
+	////											   Point(400.0f, -300.0f, 200.0f, 0.0f)); // c															
+	////
+	//// Form the other half of the plane			
+	//// where a = b of first triangle 				__
+	//// where c = c of first triangle			 a \  | b
+	//// where b.x = c.x of first triangle		    \ |
+	//// where b.y = b.y of first triangle		     \| c
+	//// where b.z = b.z of first triangle
+	//// To ensure a perfectly rectangular plane
+	////
+	////TriangleObject* triPlane2 = new TriangleObject(triPlane1->b,  // a
+	////											   Point(triPlane1->c.x, triPlane1->b.y, triPlane1->b.z, 0.0f),  // b
+	////											   triPlane1->c);  // c
+	////triPlane1->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	////triPlane2->color = triPlane1->color;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//// Initialize Lighting /////////////////////////////////////////////////////
+	//Light* light = new Light(POINT_LIGHT, Point(100.0f, 100.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	////Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//light->SetIntensity(1.0f);
+	//light->SetSpecularAttributes(60.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//light->direction.Normalize();
+
+	//Light* dirLight = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//dirLight->SetIntensity(1.0);
+	//dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	//dirLight->direction.Normalize();
+
+	//Light* dirLight2 = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, -5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//dirLight->SetIntensity(1.0);
+	//dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	//dirLight->direction.Normalize();
+	//////////////////////////////////////////////////////////////////////////////
+	//
+	//// Add Objects to the Scene ////////////////////////////////////////////////
+	//scene->objects.AddValue(sphere);
+	//scene->objects.AddValue(sphere2);
+	//scene->objects.AddValue(sphere3);
+	//scene->objects.AddValue(sphere4);
+	//scene->objects.AddValue(sphere5);
+	//scene->objects.AddValue(plane);
+	//scene->objects.AddValue(plane2);
+	//scene->objects.AddValue(plane3);
+
+	//scene->objects.AddValue(tri1);
+	//scene->objects.AddValue(tri2);
+	//scene->objects.AddValue(tri3);
+	//////////////////////////////////////////////////////////////////////////////
+
+	//// Add Lights to the Scene /////////////////////////////////////////////////
+	//scene->lights.AddValue(light);	
+	//scene->lights.AddValue(dirLight);
+	//scene->lights.AddValue(dirLight2);
+	//////////////////////////////////////////////////////////////////////////////
+
+	//finished = false;
 
 }
 
@@ -246,6 +249,11 @@ void Uninitialize() {
 	int length = scene->objects.length;
 	for (int n = 0; n < length; ++n) {
 		delete scene->objects[n];
+	}
+
+	length = scene->lights.length;
+	for (int n = 0; n < length; ++n) {
+		delete scene->lights[n];
 	}
 	
 	delete textureTest;
@@ -264,6 +272,7 @@ DWORD WINAPI RenderWorkThread (LPVOID lpThreadParameter) {
 
 void OnFrame(RenderRegion* region) {
 	RayTrace(region, VideoMemory, VIEWPORT_WIDTH, VIEWPORT_HEIGHT, mainCamera, scene, RAY_RECURSSION_OFFSET, false);
+	//RayTrace(region, VideoMemory, VIEWPORT_WIDTH, VIEWPORT_HEIGHT, mainCamera, scene, RAY_RECURSSION_OFFSET, true);
 }
 
 void OutputRenderTime(ofstream &dataLog, char* saveDateTime,/* char* endDateTime,*/ clock_t renderTime) {
@@ -694,4 +703,420 @@ void SaveCurrentDateTime(char* msg) {
 	char* endDateTime = ctime(&currentTime);
 	//dataLog << "End Time: " << endDateTime;
 	dataLog << msg << endDateTime;
+}
+
+void ClassScene() {
+	// Initialize Camera /////////////////////////////////////////////////////
+
+#ifdef USE_ORTHO_CAMERA
+	FIXED_ORTHO_CAMERA* cam = new FIXED_ORTHO_CAMERA();
+	cam->Initialize();
+	// cam-> ...
+#else
+#ifdef USE_PERSP_CAMERA
+	FIXED_PERSP_CAMERA* cam = new FIXED_PERSP_CAMERA();
+	cam->Initialize();
+#ifdef USE_PERSP_LOOK_AT
+	cam->LookAt(0.0f, 0.0f, 1500.0f);
+#endif
+	// cam-> ...
+#endif
+#endif
+
+	mainCamera = cam;
+
+	textureTest = new Texture();
+	textureTest->LoadTexture("text1.bmp");
+
+	// Initialize Objects /////////////////////////////////////////////////////
+	// RED Sphere
+	SphereObject* sphere = new SphereObject();
+	sphere->radius = 100.0f;
+	sphere->position.x = 350.0f;
+	sphere->position.y = 125.0f;
+	sphere->position.z = 1200.0f;
+	sphere->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	sphere->texture.LoadTexture("text6.bmp");
+
+	// GREEN Sphere
+	SphereObject* sphere2 = new SphereObject();
+	sphere2->radius = 100.0f;
+	sphere2->position.x = 175.0f;
+	sphere2->position.y = -150.0f;
+	sphere2->position.z = 1200.0f;
+	sphere2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	sphere2->texture.LoadTexture("text5.bmp");
+
+	// BLUE Sphere
+	SphereObject* sphere3 = new SphereObject();
+	sphere3->radius = 100.0f;
+	sphere3->position.x = 525.0f;
+	sphere3->position.y = -150.0f;
+	sphere3->position.z = 1200.0f;
+	sphere3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	sphere3->texture.LoadTexture("text4.bmp");
+
+	// BLACK Sphere
+	SphereObject* sphere4 = new SphereObject();
+	sphere4->radius = 50.0f;
+	sphere4->position.x = -400.0f;
+	sphere4->position.y = 50.0f;
+	sphere4->position.z = 1200.0f;
+	sphere4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	sphere4->texture.LoadTexture("text8.bmp");
+
+	SphereObject* sphere5 = new SphereObject();
+	sphere5->radius = 50.0f;
+	sphere5->position.x = 350.0f;
+	sphere5->position.y = -66.0f;
+	sphere5->position.z = 1200.0f;
+	sphere5->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	sphere5->texture.LoadTexture("text8.bmp");
+
+	// RED Tri
+	TriangleObject* tri1 = new TriangleObject(Point(-550.0f, -25.0f, 1200.0f, 1.0f),
+		Point(-400.0f, -225.0f, 1200.0f, 1.0f),
+		Point(-250.0f, -25.0f, 1200.0f, 1.0f));
+	tri1->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	tri1->normal = -1.0f * tri1->normal;
+	tri1->texture.LoadTexture("text2.bmp");
+
+	// GREEN Tri
+	TriangleObject* tri2 = new TriangleObject(Point(-700.0f, 175.0f, 1200.0f, 1.0f),
+		Point(-550.0f, -25.0f, 1200.0f, 1.0f),
+		Point(-400.0f, 175.0f, 1200.0f, 1.0f));
+	tri2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	tri2->normal = -1.0f * tri2->normal;
+	tri2->texture.LoadTexture("text3.bmp");
+
+	// BLUE Tri
+	TriangleObject* tri3 = new TriangleObject(Point(-400.0f, 175.0f, 1200.0f, 1.0f),
+		Point(-250.0f, -25.0f, 1200.0f, 1.0f),
+		Point(-100.0f, 175.0f, 1200.0f, 1.0f));
+	tri3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	tri3->normal = -1.0f * tri3->normal;
+	tri3->texture.LoadTexture("text7.bmp");
+
+	// WHITE Triangle
+	TriangleObject* tri4 = new TriangleObject(Point(250.0f, -87.5f, 1225.0f, 1.0f),
+		Point(325.0f, 12.5f, 1200.0f, 1.0f),
+		Point(400.0f, -87.5f, 1175.0f, 1.0f));
+	tri4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	tri4->texture.LoadTexture("text8.bmp");
+
+	// PLANE ///////////////////////////////////////////////////////////////////////////////////////////////////
+	PlaneObject* plane = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, 2000.0f, 0.0f),
+		Point(-2000.0f, 2000.0f, 2000.0f, 0.0f),
+		Point(2000.0f, -2000.0f, 2000.0f, 0.0f))
+		);
+	plane->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	plane->SetTexture("PlaneText_2048x2048.bmp");
+	plane->triLeft.reflectivity = 0.0f;
+	plane->triRight.reflectivity = 0.0f;
+	plane->reflectivity = 0.0f;
+
+	PlaneObject* plane2 = new PlaneObject(TriangleObject(Point(-2000.0f, 400.0f, -2000.0f, 0.0f),
+		Point(2000.0f, 400.0f, 2000.0f, 0.0f),
+		Point(-2000.0f, 400.0f, 2000.0f, 0.0f))
+		);
+	plane2->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	plane2->SetTexture("PlaneText2_2048x2048.bmp");
+	plane2->reflectivity = 0.0f;
+
+	PlaneObject* plane3 = new PlaneObject(TriangleObject(Point(-2000.0f, -400.0f, -2000.0f, 0.0f),
+		Point(-2000.0f, -400.0f, 2000.0f, 0.0f),
+		Point(2000.0f, -400.0f, -2000.0f, 0.0f))
+		);
+	plane3->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+	plane3->reflectivity = 0.0f;
+
+	PlaneObject* plane4 = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, -2000.0f, 0.0f),
+		Point(-2000.0f, 2000.0f, -2000.0f, 0.0f),
+		Point(2000.0f, -2000.0f, -2000.0f, 0.0f))
+		);
+	plane4->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+
+	// Form a right triangle, or half a plane    b |\
+		//											   | \
+	//											 a |__\ c
+//
+//TriangleObject* triPlane1 = new TriangleObject(Point(-400.0f, -300.0f, 200.0f, 0.0f), // a			
+//											   Point(-400.0f, 300.0f, 600.0f, 0.0f),  // b						
+//											   Point(400.0f, -300.0f, 200.0f, 0.0f)); // c															
+//
+// Form the other half of the plane			
+// where a = b of first triangle 				__
+// where c = c of first triangle			 a \  | b
+// where b.x = c.x of first triangle		    \ |
+// where b.y = b.y of first triangle		     \| c
+// where b.z = b.z of first triangle
+// To ensure a perfectly rectangular plane
+//
+//TriangleObject* triPlane2 = new TriangleObject(triPlane1->b,  // a
+//											   Point(triPlane1->c.x, triPlane1->b.y, triPlane1->b.z, 0.0f),  // b
+//											   triPlane1->c);  // c
+//triPlane1->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+//triPlane2->color = triPlane1->color;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Initialize Lighting /////////////////////////////////////////////////////
+	Light* light = new Light(POINT_LIGHT, Point(100.0f, 100.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light->SetIntensity(1.0f);
+	light->SetSpecularAttributes(60.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light->direction.Normalize();
+
+	Light* dirLight = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	dirLight->SetIntensity(1.0);
+	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	dirLight->direction.Normalize();
+
+	Light* dirLight2 = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, -5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	dirLight->SetIntensity(1.0);
+	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	dirLight->direction.Normalize();
+	////////////////////////////////////////////////////////////////////////////
+
+	// Add Objects to the Scene ////////////////////////////////////////////////
+	scene->objects.AddValue(sphere);
+	scene->objects.AddValue(sphere2);
+	scene->objects.AddValue(sphere3);
+	scene->objects.AddValue(sphere4);
+	scene->objects.AddValue(sphere5);
+	scene->objects.AddValue(plane);
+	scene->objects.AddValue(plane2);
+	scene->objects.AddValue(plane3);
+
+	scene->objects.AddValue(tri1);
+	scene->objects.AddValue(tri2);
+	scene->objects.AddValue(tri3);
+	////////////////////////////////////////////////////////////////////////////
+
+	// Add Lights to the Scene /////////////////////////////////////////////////
+	scene->lights.AddValue(light);
+	scene->lights.AddValue(dirLight);
+	scene->lights.AddValue(dirLight2);
+	////////////////////////////////////////////////////////////////////////////
+
+	finished = false;
+}
+
+void PortfolioScene() {
+	// Initialize Camera /////////////////////////////////////////////////////
+
+#ifdef USE_ORTHO_CAMERA
+	FIXED_ORTHO_CAMERA* cam = new FIXED_ORTHO_CAMERA();
+	cam->Initialize();
+	// cam-> ...
+#else
+#ifdef USE_PERSP_CAMERA
+	FIXED_PERSP_CAMERA* cam = new FIXED_PERSP_CAMERA();
+	cam->Initialize();
+#ifdef USE_PERSP_LOOK_AT
+	cam->LookAt(0.0f, 0.0f, 1500.0f);
+#endif
+	// cam-> ...
+#endif
+#endif
+
+	mainCamera = cam;
+
+	textureTest = new Texture();
+	textureTest->LoadTexture("text1.bmp");
+
+	// Initialize Objects /////////////////////////////////////////////////////
+	// RED Sphere
+	SphereObject* sphere = new SphereObject();
+	sphere->radius = 100.0f;
+	sphere->position.x = 0.0f;
+	sphere->position.y = 175.0f;
+	sphere->position.z = 1200.0f;
+	sphere->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	sphere->texture.LoadTexture("text6.bmp");
+
+	// GREEN Sphere
+	SphereObject* sphere2 = new SphereObject();
+	sphere2->radius = 100.0f;
+	sphere2->position.x = 100.0f;
+	sphere2->position.y = 0.0f;
+	sphere2->position.z = 1200.0f;
+	sphere2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	sphere2->texture.LoadTexture("text5.bmp");
+
+	// BLUE Sphere
+	SphereObject* sphere3 = new SphereObject();
+	sphere3->radius = 100.0f;
+	sphere3->position.x = -100.0f;
+	sphere3->position.y = 0.0f;
+	sphere3->position.z = 1200.0f;
+	sphere3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	sphere3->texture.LoadTexture("text4.bmp");
+
+	// PURPLE Sphere
+	SphereObject* sphere4 = new SphereObject();
+	sphere4->radius = 50.0f;
+	sphere4->position.x = 0.0f;
+	sphere4->position.y = 50.0f;
+	sphere4->position.z = 900.0f;
+	sphere4->color = Color(0.7f, 0.1f, 0.5f, 1.0f);
+	sphere4->texture.LoadTexture("text6.bmp");
+
+	// RED Tri
+	TriangleObject* tri1 = new TriangleObject(Point(-75.0f, -50.0f, 900.0f, 1.0f),
+		Point(-25.0f, -50.0f, 900.0f, 1.0f),
+		Point(-75.0f, 0.0f, 900.0f, 1.0f));
+	tri1->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	tri1->normal = -1.0f * tri1->normal;
+	tri1->texture.LoadTexture("text2.bmp");
+
+	// RED Sphere 2
+	SphereObject* sphere5 = new SphereObject();
+	sphere5->radius = 100.0f;
+	sphere5->position.x = 0.0f;
+	sphere5->position.y = 50.0f;
+	sphere5->position.z = 1200.0f;
+	sphere5->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	sphere5->texture.LoadTexture("text6.bmp");
+
+	// BLACK Sphere
+	//SphereObject* sphere4 = new SphereObject();
+	//sphere4->radius = 50.0f;
+	//sphere4->position.x = -400.0f;
+	//sphere4->position.y = 50.0f;
+	//sphere4->position.z = 1200.0f;
+	//sphere4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//sphere4->texture.LoadTexture("text8.bmp");
+
+	//SphereObject* sphere5 = new SphereObject();
+	//sphere5->radius = 50.0f;
+	//sphere5->position.x = 350.0f;
+	//sphere5->position.y = -66.0f;
+	//sphere5->position.z = 1200.0f;
+	//sphere5->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//sphere5->texture.LoadTexture("text8.bmp");
+
+	//// RED Tri
+	//TriangleObject* tri1 = new TriangleObject(Point(-550.0f, -25.0f, 1200.0f, 1.0f),
+	//	Point(-400.0f, -225.0f, 1200.0f, 1.0f),
+	//	Point(-250.0f, -25.0f, 1200.0f, 1.0f));
+	//tri1->color = Color(1.0f, 0.0f, 0.0f, 1.0f);
+	//tri1->normal = -1.0f * tri1->normal;
+	//tri1->texture.LoadTexture("text2.bmp");
+
+	//// GREEN Tri
+	//TriangleObject* tri2 = new TriangleObject(Point(-700.0f, 175.0f, 1200.0f, 1.0f),
+	//	Point(-550.0f, -25.0f, 1200.0f, 1.0f),
+	//	Point(-400.0f, 175.0f, 1200.0f, 1.0f));
+	//tri2->color = Color(0.0f, 1.0f, 0.0f, 1.0f);
+	//tri2->normal = -1.0f * tri2->normal;
+	//tri2->texture.LoadTexture("text3.bmp");
+
+	//// BLUE Tri
+	//TriangleObject* tri3 = new TriangleObject(Point(-400.0f, 175.0f, 1200.0f, 1.0f),
+	//	Point(-250.0f, -25.0f, 1200.0f, 1.0f),
+	//	Point(-100.0f, 175.0f, 1200.0f, 1.0f));
+	//tri3->color = Color(0.0f, 0.0f, 1.0f, 1.0f);
+	//tri3->normal = -1.0f * tri3->normal;
+	//tri3->texture.LoadTexture("text7.bmp");
+
+	//// WHITE Triangle
+	//TriangleObject* tri4 = new TriangleObject(Point(250.0f, -87.5f, 1225.0f, 1.0f),
+	//	Point(325.0f, 12.5f, 1200.0f, 1.0f),
+	//	Point(400.0f, -87.5f, 1175.0f, 1.0f));
+	//tri4->color = Color(0.1f, 0.1f, 0.1f, 1.0f);
+	//tri4->texture.LoadTexture("text8.bmp");
+
+	//// PLANE ///////////////////////////////////////////////////////////////////////////////////////////////////
+	//PlaneObject* plane = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, 2000.0f, 0.0f),
+	//	Point(-2000.0f, 2000.0f, 2000.0f, 0.0f),
+	//	Point(2000.0f, -2000.0f, 2000.0f, 0.0f))
+	//	);
+	//plane->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	//plane->SetTexture("PlaneText_2048x2048.bmp");
+	//plane->triLeft.reflectivity = 0.0f;
+	//plane->triRight.reflectivity = 0.0f;
+	//plane->reflectivity = 0.0f;
+
+	//PlaneObject* plane2 = new PlaneObject(TriangleObject(Point(-2000.0f, 400.0f, -2000.0f, 0.0f),
+	//	Point(2000.0f, 400.0f, 2000.0f, 0.0f),
+	//	Point(-2000.0f, 400.0f, 2000.0f, 0.0f))
+	//	);
+	//plane2->SetColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
+	//plane2->SetTexture("PlaneText2_2048x2048.bmp");
+	//plane2->reflectivity = 0.0f;
+
+	//PlaneObject* plane3 = new PlaneObject(TriangleObject(Point(-2000.0f, -400.0f, -2000.0f, 0.0f),
+	//	Point(-2000.0f, -400.0f, 2000.0f, 0.0f),
+	//	Point(2000.0f, -400.0f, -2000.0f, 0.0f))
+	//	);
+	//plane3->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+	//plane3->reflectivity = 0.0f;
+
+	//PlaneObject* plane4 = new PlaneObject(TriangleObject(Point(-2000.0f, -2000.0f, -2000.0f, 0.0f),
+	//	Point(-2000.0f, 2000.0f, -2000.0f, 0.0f),
+	//	Point(2000.0f, -2000.0f, -2000.0f, 0.0f))
+	//	);
+	//plane4->SetColor(Color(0.5f, 0.5f, 0.5f, 1.0f));
+
+	// Initialize Lighting /////////////////////////////////////////////////////
+	Light* light = new Light(POINT_LIGHT, Point(100.0f, 100.0f, 600.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light->SetIntensity(1.0f);
+	light->SetSpecularAttributes(240.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light->direction.Normalize();
+
+	Light* light2 = new Light(POINT_LIGHT, Point(800.0f, -200.0f, 300.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light2->SetIntensity(1.0f);
+	light2->SetSpecularAttributes(240.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light2->direction.Normalize();
+
+	Light* light3 = new Light(POINT_LIGHT, Point(-600.0f, -200.0f, 300.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	//Light* light = new Light(POINT_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 0.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light3->SetSpecularAttributes(240.0f, Color(1.0f, 1.0f, 1.0f, 1.0f));
+	light3->SetIntensity(1.0f);
+	light3->direction.Normalize();
+
+	Light* dirLight = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, 5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	dirLight->SetIntensity(0.1);
+	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	dirLight->direction.Normalize();
+
+	Light* dirLight2 = new Light(DIR_LIGHT, Point(0.0f, 0.0f, 0.0f, 0.0f), Vector(0.0f, -5.0f, -5.0f, 0.0f), Color(1.0f, 1.0f, 1.0f, 1.0f));
+	dirLight->SetIntensity(0.1);
+	dirLight->SetSpecularAttributes(0.0f, Color(0.0f, 0.0f, 0.0f, 1.0f));
+	dirLight->direction.Normalize();
+	////////////////////////////////////////////////////////////////////////////
+
+	// Add Objects to the Scene ////////////////////////////////////////////////
+	//scene->objects.AddValue(sphere);
+	//scene->objects.AddValue(sphere2);
+	//scene->objects.AddValue(sphere3);
+	//scene->objects.AddValue(sphere4);
+	//scene->objects.AddValue(tri1);
+	//scene->objects.AddValue(sphere4);
+	scene->objects.AddValue(sphere5);
+
+
+
+	/*scene->objects.AddValue(sphere5);
+	scene->objects.AddValue(plane);
+	scene->objects.AddValue(plane2);
+	scene->objects.AddValue(plane3);
+
+	scene->objects.AddValue(tri1);
+	scene->objects.AddValue(tri2);
+	scene->objects.AddValue(tri3);*/
+	////////////////////////////////////////////////////////////////////////////
+
+	// Add Lights to the Scene /////////////////////////////////////////////////
+	//scene->lights.AddValue(light);
+	//scene->lights.AddValue(light2);
+	//scene->lights.AddValue(light3);
+	scene->lights.AddValue(dirLight);
+	//scene->lights.AddValue(dirLight2);
+	////////////////////////////////////////////////////////////////////////////
+
+	finished = false;
 }
